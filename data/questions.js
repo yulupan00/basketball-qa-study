@@ -1,340 +1,1000 @@
 const QUESTIONS = [
   {
-    "id": 268683252,
-    "question_type": "Q1_atomic_action_recognition",
-    "question": "What atomic action is shown in the video clip?",
+    "id": "Q1_654_620919",
+    "question_type": "Q1",
+    "question": "Analyze the 10-minute segment from the 1st period. Focus on the player who makes a free throw between time 1:30 and 1:40. How many total three-pointers made will this specific player record during the 2nd period?",
     "options": [
       {
         "letter": "A",
-        "text": "Assisting"
+        "text": "3"
       },
       {
         "letter": "B",
-        "text": "Free Throw Made"
+        "text": "1"
       },
       {
         "letter": "C",
-        "text": "Foul"
+        "text": "2"
       },
       {
         "letter": "D",
-        "text": "3 PT Made"
+        "text": "6"
       },
       {
         "letter": "E",
-        "text": "2 PT Missed"
+        "text": "4"
       }
     ],
     "correct_answer": "C"
   },
   {
-    "id": 156957175,
-    "question_type": "Q1_atomic_action_recognition",
-    "question": "What atomic action is shown in the video clip?",
+    "id": "Q1_114_433199",
+    "question_type": "Q1",
+    "question": "Analyze the 15-minute segment from the 1st period. Focus on the player who makes a free throw between time 0:32 and 0:42. How many total two-pointers made will this specific player record during the 2nd period?",
     "options": [
       {
         "letter": "A",
-        "text": "Turnover"
+        "text": "6"
       },
       {
         "letter": "B",
-        "text": "Free Throw Made"
+        "text": "9"
       },
       {
         "letter": "C",
-        "text": "3 PT Made"
+        "text": "8"
       },
       {
         "letter": "D",
+        "text": "1"
+      },
+      {
+        "letter": "E",
+        "text": "4"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q1_25_431955",
+    "question_type": "Q1",
+    "question": "Analyze the 7-minute segment from the 1st period. Focus on the player who commits a turnover between time 1:32 and 1:42. How many total two-pointers made will this specific player record from the end of this segment until the end of the 1st period?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "9"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "2"
+      },
+      {
+        "letter": "E",
+        "text": "6"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q1_281_846872",
+    "question_type": "Q1",
+    "question": "Analyze the 10-minute segment from the 1st period. Focus on the player who makes a three-point attempt between time 1:38 and 1:48. How many total three-pointers made will this specific player record from the end of this segment until the conclusion of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "2"
+      },
+      {
+        "letter": "C",
+        "text": "3"
+      },
+      {
+        "letter": "D",
+        "text": "1"
+      },
+      {
+        "letter": "E",
+        "text": "5"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q1_250_409072",
+    "question_type": "Q1",
+    "question": "Analyze the 3-minute segment from the 1st period. Focus on the player who makes a two-point attempt between time 0:50 and 1:00. How many total assists will this specific player record from the end of this segment until the conclusion of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "4"
+      },
+      {
+        "letter": "E",
+        "text": "9"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": "Q10_228_937127",
+    "question_type": "Q10",
+    "question": "Analyze the 12-minute segment of the game. Observe the player who misses a three-point attempt between time 6:10 and 6:20. Which shot type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Floater"
+      },
+      {
+        "letter": "B",
+        "text": "Hook"
+      },
+      {
+        "letter": "C",
+        "text": "Dunk"
+      },
+      {
+        "letter": "D",
+        "text": "Lay up"
+      },
+      {
+        "letter": "E",
+        "text": "Jumper"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": "Q10_142_998123",
+    "question_type": "Q10",
+    "question": "Analyze the 5-minute segment of the game. Observe the player who misses a two-point attempt between time 0:43 and 0:53. Which shot type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dunk"
+      },
+      {
+        "letter": "B",
+        "text": "Floater"
+      },
+      {
+        "letter": "C",
+        "text": "Hook"
+      },
+      {
+        "letter": "D",
+        "text": "Lay up"
+      },
+      {
+        "letter": "E",
+        "text": "Jumper"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q10_104_404325",
+    "question_type": "Q10",
+    "question": "Analyze the 12-minute segment of the game. Observe the player who commits a foul between time 0:19 and 0:29. Which shot type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dunk"
+      },
+      {
+        "letter": "B",
+        "text": "Lay up"
+      },
+      {
+        "letter": "C",
+        "text": "Floater"
+      },
+      {
+        "letter": "D",
+        "text": "Jumper"
+      },
+      {
+        "letter": "E",
+        "text": "Hook"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q10_692_830930",
+    "question_type": "Q10",
+    "question": "Analyze the 5-minute segment of the game. Observe the player who grabs a rebound between time 1:37 and 1:47. Which shot type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dunk"
+      },
+      {
+        "letter": "B",
+        "text": "Jumper"
+      },
+      {
+        "letter": "C",
+        "text": "Lay up"
+      },
+      {
+        "letter": "D",
+        "text": "Floater"
+      },
+      {
+        "letter": "E",
+        "text": "Hook"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q10_558_988973",
+    "question_type": "Q10",
+    "question": "Analyze the 12-minute segment of the game. Observe the player who commits a turnover between time 10:42 and 10:52. Which shot type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jumper"
+      },
+      {
+        "letter": "B",
+        "text": "Floater"
+      },
+      {
+        "letter": "C",
+        "text": "Lay up"
+      },
+      {
+        "letter": "D",
+        "text": "Dunk"
+      },
+      {
+        "letter": "E",
+        "text": "Hook"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q2_89_987985",
+    "question_type": "Q2",
+    "question": "Watch a 10-minute segment from period 1. How many two-point misses will team Jacksonville State record in the remainder of the game in regulation time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "17"
+      },
+      {
+        "letter": "B",
+        "text": "4"
+      },
+      {
+        "letter": "C",
+        "text": "18"
+      },
+      {
+        "letter": "D",
+        "text": "7"
+      },
+      {
+        "letter": "E",
+        "text": "11"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": "Q2_604_403348",
+    "question_type": "Q2",
+    "question": "Watch a 3-minute segment from period 1. How many three-point misses will team BC Lietkabelis Panevezys record in the remainder of the game in regulation time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "2"
+      },
+      {
+        "letter": "B",
+        "text": "13"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      },
+      {
+        "letter": "E",
+        "text": "24"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q2_432_824651",
+    "question_type": "Q2",
+    "question": "Watch a 5-minute segment from period 1. How many field goals made will team Valparaiso record in the remainder of the game in regulation time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "17"
+      },
+      {
+        "letter": "B",
+        "text": "22"
+      },
+      {
+        "letter": "C",
+        "text": "11"
+      },
+      {
+        "letter": "D",
+        "text": "23"
+      },
+      {
+        "letter": "E",
+        "text": "5"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": "Q2_32_796140",
+    "question_type": "Q2",
+    "question": "Watch a 3-minute segment from period 1. How many three-pointers made will team Promitheas Patras BC record in the remainder of the game in regulation time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "9"
+      },
+      {
+        "letter": "B",
+        "text": "11"
+      },
+      {
+        "letter": "C",
+        "text": "6"
+      },
+      {
+        "letter": "D",
+        "text": "3"
+      },
+      {
+        "letter": "E",
+        "text": "14"
+      }
+    ],
+    "correct_answer": "E"
+  },
+  {
+    "id": "Q2_30_971957",
+    "question_type": "Q2",
+    "question": "Watch a 3-minute segment from period 3. How many field goal attempts will team Kansas State record in the remainder of the game in regulation time?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "13"
+      },
+      {
+        "letter": "C",
+        "text": "12"
+      },
+      {
+        "letter": "D",
+        "text": "25"
+      },
+      {
+        "letter": "E",
+        "text": "20"
+      }
+    ],
+    "correct_answer": "E"
+  },
+  {
+    "id": "Q3_95_920361",
+    "question_type": "Q3",
+    "question": "Analyze the 10-minute segment from the 1st period. Which player will be the first to reach 15 points by the end of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who misses a two-point attempt between time 7:25 and 7:35"
+      },
+      {
+        "letter": "B",
+        "text": "The player who misses a two-point attempt between time 5:35 and 5:45"
+      },
+      {
+        "letter": "C",
+        "text": "The player who misses a free throw between time 0:51 and 1:01"
+      },
+      {
+        "letter": "D",
+        "text": "The player who rebound between time 5:39 and 5:49"
+      },
+      {
+        "letter": "E",
+        "text": "The player who misses a two-point attempt between time 7:52 and 8:02"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q3_223_868868",
+    "question_type": "Q3",
+    "question": "Analyze the 15-minute segment from the 2nd period. Which player will be the first to reach 5 three-pointers made by the end of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who commits a foul between time 8:52 and 9:02"
+      },
+      {
+        "letter": "B",
+        "text": "The player who misses a three-point attempt between time 3:08 and 3:18"
+      },
+      {
+        "letter": "C",
+        "text": "The player who rebound between time 9:42 and 9:52"
+      },
+      {
+        "letter": "D",
+        "text": "The player who makes a two-point attempt between time 1:57 and 2:07"
+      },
+      {
+        "letter": "E",
+        "text": "The player who misses a three-point attempt between time 4:31 and 4:41"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": "Q3_238_962817",
+    "question_type": "Q3",
+    "question": "Analyze the 7-minute segment from the 2nd period. Which player will be the first to reach 8 three-point misses by the end of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who commits a foul between time 1:59 and 2:09"
+      },
+      {
+        "letter": "B",
+        "text": "The player who makes a free throw between time 3:41 and 3:51"
+      },
+      {
+        "letter": "C",
+        "text": "The player who misses a free throw between time 5:08 and 5:18"
+      },
+      {
+        "letter": "D",
+        "text": "The player who rebound between time 1:06 and 1:16"
+      },
+      {
+        "letter": "E",
+        "text": "The player who commits a foul between time 5:52 and 6:02"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q3_517_991422",
+    "question_type": "Q3",
+    "question": "Analyze the 5-minute segment from the 2nd period. Which player will be the first to reach 20 points by the end of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who makes a two-point attempt between time 1:23 and 1:33"
+      },
+      {
+        "letter": "B",
+        "text": "The player who misses a two-point attempt between time 3:26 and 3:36"
+      },
+      {
+        "letter": "C",
+        "text": "The player who misses a three-point attempt between time 1:37 and 1:47"
+      },
+      {
+        "letter": "D",
+        "text": "The player who misses a two-point attempt between time 1:08 and 1:18"
+      },
+      {
+        "letter": "E",
+        "text": "The player who rebound between time 1:11 and 1:21"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q3_616_986898",
+    "question_type": "Q3",
+    "question": "Analyze the 5-minute segment from the 1st period. Which player will be the first to reach 6 field goals made by the end of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who turnover between time 4:31 and 4:41"
+      },
+      {
+        "letter": "B",
+        "text": "The player who commits a foul between time 0:16 and 0:26"
+      },
+      {
+        "letter": "C",
+        "text": "The player who makes a two-point attempt between time 4:18 and 4:28"
+      },
+      {
+        "letter": "D",
+        "text": "The player who misses a two-point attempt between time 1:39 and 1:49"
+      },
+      {
+        "letter": "E",
+        "text": "The player who makes a free throw between time 1:13 and 1:23"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q4_27_846481",
+    "question_type": "Q4",
+    "question": "Watch a 12-minute long segment of period 2. Which team will be the first to reach 15 in 2pt-missed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Delaware"
+      },
+      {
+        "letter": "B",
+        "text": "Lafayette"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q4_574_829365",
+    "question_type": "Q4",
+    "question": "Watch a 5-minute long segment of period 3. Which team will be the first to reach 35 in rebounds?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Wofford"
+      },
+      {
+        "letter": "B",
+        "text": "East Tennessee State"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q4_203_399435",
+    "question_type": "Q4",
+    "question": "Watch a 12-minute long segment of period 3. Which team will be the first to reach 20 in assists?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "FMP Beograd"
+      },
+      {
+        "letter": "B",
+        "text": "KK Buducnost"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q4_665_992478",
+    "question_type": "Q4",
+    "question": "Watch a 10-minute long segment of period 2. Which team will be the first to reach 15 in 2pt-made?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Iowa"
+      },
+      {
+        "letter": "B",
+        "text": "Northwestern"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q4_558_830257",
+    "question_type": "Q4",
+    "question": "Watch a 3-minute long segment of period 3. Which team will be the first to reach 20 in 2pt-missed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mt. St. Mary's"
+      },
+      {
+        "letter": "B",
+        "text": "St. Francis (NY)"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q5_429_976068",
+    "question_type": "Q5",
+    "question": "Watch a 3-minute segment in period 4. Based on this segment, predict which team will win the game by the end of regulation, or if the game goes to overtime.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Yale"
+      },
+      {
+        "letter": "B",
+        "text": "Overtime"
+      },
+      {
+        "letter": "C",
+        "text": "Princeton"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q5_225_963572",
+    "question_type": "Q5",
+    "question": "Watch a 10-minute segment in period 2. Based on this segment, predict which team will win the game by the end of regulation, or if the game goes to overtime.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "San Jose State"
+      },
+      {
+        "letter": "B",
+        "text": "Overtime"
+      },
+      {
+        "letter": "C",
+        "text": "Cal State Fullerton"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q5_459_984620",
+    "question_type": "Q5",
+    "question": "Watch a 3-minute segment in period 2. Based on this segment, predict which team will win the game by the end of regulation, or if the game goes to overtime.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "DePaul"
+      },
+      {
+        "letter": "B",
+        "text": "Overtime"
+      },
+      {
+        "letter": "C",
+        "text": "Providence"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q5_603_820530",
+    "question_type": "Q5",
+    "question": "Watch a 3-minute segment in period 2. Based on this segment, predict which team will win the game by the end of regulation, or if the game goes to overtime.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Belmont"
+      },
+      {
+        "letter": "B",
+        "text": "Overtime"
+      },
+      {
+        "letter": "C",
+        "text": "Tennessee State"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q5_284_865208",
+    "question_type": "Q5",
+    "question": "Watch a 3-minute segment in period 4. Based on this segment, predict which team will win the game by the end of regulation, or if the game goes to overtime.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Overtime"
+      },
+      {
+        "letter": "B",
+        "text": "CB Herbalife Gran Canaria"
+      },
+      {
+        "letter": "C",
+        "text": "Hereda San Pablo Burgos"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q6_6_868771",
+    "question_type": "Q6",
+    "question": "Watch a 3-minute segment from period 3. Which player on team Charlotte Hornets will be the next to 2-pointer made?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who makes a three-point attempt between time 1:50 and 2:00"
+      },
+      {
+        "letter": "B",
+        "text": "The player who makes a three-point attempt between time 2:15 and 2:25"
+      },
+      {
+        "letter": "C",
+        "text": "The player who grabs a rebound between time 2:37 and 2:47"
+      },
+      {
+        "letter": "D",
+        "text": "The player who misses a two-point attempt between time 1:32 and 1:42"
+      },
+      {
+        "letter": "E",
+        "text": "The player who grabs a rebound between time 1:46 and 1:56"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q6_163_993795",
+    "question_type": "Q6",
+    "question": "Watch a 5-minute segment from period 1. Which player on team Miami (OH) will be the next to rebound?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who misses a two-point attempt between time 2:00 and 2:10"
+      },
+      {
+        "letter": "B",
+        "text": "The player who misses a three-point attempt between time 4:21 and 4:31"
+      },
+      {
+        "letter": "C",
+        "text": "The player who misses a three-point attempt between time 4:15 and 4:25"
+      },
+      {
+        "letter": "D",
+        "text": "The player who grabs a rebound between time 4:41 and 4:51"
+      },
+      {
+        "letter": "E",
+        "text": "The player who grabs a rebound between time 0:43 and 0:53"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q6_432_825392",
+    "question_type": "Q6",
+    "question": "Watch a 3-minute segment from period 2. Which player on team Niagara will be the next to 3-pointer attempted?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who misses a three-point attempt between time 2:47 and 2:57"
+      },
+      {
+        "letter": "B",
+        "text": "The player who grabs a rebound between time 0:00 and 0:07"
+      },
+      {
+        "letter": "C",
+        "text": "The player who misses a two-point attempt between time 0:14 and 0:24"
+      },
+      {
+        "letter": "D",
+        "text": "The player who grabs a rebound between time 2:41 and 2:51"
+      },
+      {
+        "letter": "E",
+        "text": "The player who grabs a rebound between time 0:54 and 1:04"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q6_348_1003510",
+    "question_type": "Q6",
+    "question": "Watch a 3-minute segment from period 2. Which player on team New York Knicks will be the next to free throw made?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who misses a three-point attempt between time 0:04 and 0:14"
+      },
+      {
+        "letter": "B",
+        "text": "The player who grabs a rebound between time 0:22 and 0:32"
+      },
+      {
+        "letter": "C",
+        "text": "The player who grabs a rebound between time 2:29 and 2:39"
+      },
+      {
+        "letter": "D",
+        "text": "The player who makes a two-point attempt between time 2:49 and 2:59"
+      },
+      {
+        "letter": "E",
+        "text": "The player who grabs a rebound between time 2:01 and 2:11"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q6_284_902396",
+    "question_type": "Q6",
+    "question": "Watch a 5-minute segment from period 1. Which player on team Washington State will be the next to 2-pointer attempted?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The player who makes a two-point attempt between time 4:25 and 4:35"
+      },
+      {
+        "letter": "B",
+        "text": "The player who misses a two-point attempt between time 0:43 and 0:53"
+      },
+      {
+        "letter": "C",
+        "text": "The player who grabs a rebound between time 0:58 and 1:08"
+      },
+      {
+        "letter": "D",
+        "text": "The player who misses a two-point attempt between time 1:10 and 1:20"
+      },
+      {
+        "letter": "E",
+        "text": "The player who grabs a rebound between time 4:51 and 5:00"
+      }
+    ],
+    "correct_answer": "E"
+  },
+  {
+    "id": "Q7_159_401437",
+    "question_type": "Q7",
+    "question": "Watch a 7-minute segment of the game. Which play type will Dallas Mavericks use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
         "text": "Pick'n'Roll"
       },
       {
-        "letter": "E",
-        "text": "Free Throw Missed"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 243070298,
-    "question_type": "Q1_atomic_action_recognition",
-    "question": "What atomic action is shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Rebound"
-      },
-      {
         "letter": "B",
-        "text": "2 PT Missed"
+        "text": "Screen off"
       },
       {
         "letter": "C",
-        "text": "2 PT Made"
+        "text": "Cut"
       },
       {
         "letter": "D",
-        "text": "3 PT Made"
+        "text": "Transition"
       },
       {
         "letter": "E",
-        "text": "3 PT Missed"
+        "text": "Hand offs"
+      }
+    ],
+    "correct_answer": "E"
+  },
+  {
+    "id": "Q7_220_1020031",
+    "question_type": "Q7",
+    "question": "Watch a 12-minute segment of the game. Which play type will La Salle use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Isolation"
+      },
+      {
+        "letter": "B",
+        "text": "Pick'n'Roll"
+      },
+      {
+        "letter": "C",
+        "text": "Screen off"
+      },
+      {
+        "letter": "D",
+        "text": "Post"
+      },
+      {
+        "letter": "E",
+        "text": "Transition"
       }
     ],
     "correct_answer": "C"
   },
   {
-    "id": 155159304,
-    "question_type": "Q2_action_sequence",
-    "question": "What is the correct sequence of actions shown in the video clip?",
+    "id": "Q7_344_868187",
+    "question_type": "Q7",
+    "question": "Watch a 15-minute segment of the game. Which play type will Minnesota Timberwolves use the most for the remainder of the game?",
     "options": [
       {
         "letter": "A",
-        "text": "3 Pt Missed, Rebound, Steal"
+        "text": "Hand offs"
       },
       {
         "letter": "B",
-        "text": "Pick'n'Roll, 3 Pt Made, Assisting"
+        "text": "Screen off"
       },
       {
         "letter": "C",
-        "text": "Pick'n'Roll, Assisting, 2 Pt Made"
+        "text": "Catch and Drive"
       },
       {
         "letter": "D",
-        "text": "Post, Assisting, 2 Pt Made"
+        "text": "Cut"
       },
       {
         "letter": "E",
-        "text": "2 Pt Missed, Rebound, 2 Pt Made"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 166013966,
-    "question_type": "Q2_action_sequence",
-    "question": "What is the correct sequence of actions shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "3 Pt Missed, Rebound, 2 Pt Made"
-      },
-      {
-        "letter": "B",
-        "text": "2+1, Assisting, Foul"
-      },
-      {
-        "letter": "C",
-        "text": "3 Pt Missed, Rebound, 2 Pt Missed"
-      },
-      {
-        "letter": "D",
-        "text": "Pick'n'Roll, 3 Pt Made, Assisting"
-      },
-      {
-        "letter": "E",
-        "text": "Screen, 3 Pt Missed, Rebound"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 134524803,
-    "question_type": "Q2_action_sequence",
-    "question": "What is the correct sequence of actions shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "2 Pt Missed, Rebound, Turnover"
-      },
-      {
-        "letter": "B",
-        "text": "Pick'n'Roll, 3 Pt Missed, Rebound"
-      },
-      {
-        "letter": "C",
-        "text": "Pick'n'Roll, 2 Pt Missed, Rebound"
-      },
-      {
-        "letter": "D",
-        "text": "2 Pt Missed, Rebound, 2 Pt Missed"
-      },
-      {
-        "letter": "E",
-        "text": "3 Pt Missed, 2 Pt Made, Assisting"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 224923420,
-    "question_type": "Q3_contested_shot",
-    "question": "Was the shot in the video contested or uncontested?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Contested"
-      },
-      {
-        "letter": "B",
-        "text": "Uncontested"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 268774187,
-    "question_type": "Q3_contested_shot",
-    "question": "Was the shot in the video contested or uncontested?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Uncontested"
-      },
-      {
-        "letter": "B",
-        "text": "Contested"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 177510865,
-    "question_type": "Q3_dribble_move",
-    "question": "What dribble move is shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Step back"
-      },
-      {
-        "letter": "B",
-        "text": "Jab step"
-      },
-      {
-        "letter": "C",
-        "text": "Spin move"
-      },
-      {
-        "letter": "D",
-        "text": "Changing speed"
-      },
-      {
-        "letter": "E",
-        "text": "Quick first step"
+        "text": "Pick'n'pop"
       }
     ],
     "correct_answer": "E"
   },
   {
-    "id": 252825046,
-    "question_type": "Q3_dribble_move",
-    "question": "What dribble move is shown in the video clip?",
+    "id": "Q7_104_1002572",
+    "question_type": "Q7",
+    "question": "Watch a 15-minute segment of the game. Which play type will Coosur Real Betis use the most for the remainder of the game?",
     "options": [
       {
         "letter": "A",
-        "text": "Changing speed"
+        "text": "Transition"
       },
       {
         "letter": "B",
-        "text": "Quick first step"
+        "text": "Pick'n'Roll"
       },
       {
         "letter": "C",
-        "text": "Fadeaway"
+        "text": "Catch and shoot"
       },
       {
         "letter": "D",
-        "text": "Step back"
+        "text": "Catch and Drive"
       },
       {
         "letter": "E",
-        "text": "Spin move"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 184362145,
-    "question_type": "Q3_dribble_move",
-    "question": "What dribble move is shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Changing direction"
-      },
-      {
-        "letter": "B",
-        "text": "Fadeaway"
-      },
-      {
-        "letter": "C",
-        "text": "Changing speed"
-      },
-      {
-        "letter": "D",
-        "text": "Step back"
-      },
-      {
-        "letter": "E",
-        "text": "Quick first step"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 254158258,
-    "question_type": "Q3_drive_direction",
-    "question": "What is the direction of the drive in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Drives Left"
-      },
-      {
-        "letter": "B",
-        "text": "Drives Right"
+        "text": "Pick'n'pop"
       }
     ],
     "correct_answer": "B"
   },
   {
-    "id": 151737746,
-    "question_type": "Q3_drive_direction",
-    "question": "What is the direction of the drive in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Drives Right"
-      },
-      {
-        "letter": "B",
-        "text": "Drives Left"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 121153793,
-    "question_type": "Q3_drive_direction",
-    "question": "What is the direction of the drive in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Drives Right"
-      },
-      {
-        "letter": "B",
-        "text": "Drives Left"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 249567931,
-    "question_type": "Q3_play_type",
-    "question": "What is the play type shown in the video clip?",
+    "id": "Q7_94_848862",
+    "question_type": "Q7",
+    "question": "Watch a 12-minute segment of the game. Which play type will Toledo use the most for the remainder of the game?",
     "options": [
       {
         "letter": "A",
@@ -342,27 +1002,163 @@ const QUESTIONS = [
       },
       {
         "letter": "B",
-        "text": "Isolation"
-      },
-      {
-        "letter": "C",
-        "text": "Post"
-      },
-      {
-        "letter": "D",
         "text": "Pick'n'Roll"
       },
       {
+        "letter": "C",
+        "text": "Catch and shoot"
+      },
+      {
+        "letter": "D",
+        "text": "Isolation"
+      },
+      {
         "letter": "E",
-        "text": "Pick-n-roll without a ball"
+        "text": "Catch and Drive"
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": "Q8_389_427652",
+    "question_type": "Q8",
+    "question": "Watch a 3-minute segment of the game. Which shot type will Xinjiang Flying Tigers use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lay up"
+      },
+      {
+        "letter": "B",
+        "text": "Jumper"
       }
     ],
     "correct_answer": "B"
   },
   {
-    "id": 251742806,
-    "question_type": "Q3_play_type",
-    "question": "What is the play type shown in the video clip?",
+    "id": "Q8_99_403811",
+    "question_type": "Q8",
+    "question": "Watch a 7-minute segment of the game. Which shot type will BC Rytas use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jumper"
+      },
+      {
+        "letter": "B",
+        "text": "Lay up"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q8_367_1014274",
+    "question_type": "Q8",
+    "question": "Watch a 10-minute segment of the game. Which shot type will Zhejiang Golden Bulls use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lay up"
+      },
+      {
+        "letter": "B",
+        "text": "Jumper"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q8_352_954480",
+    "question_type": "Q8",
+    "question": "Watch a 7-minute segment of the game. Which shot type will BC Pieno Zvaigzdes Pasvalys use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jumper"
+      },
+      {
+        "letter": "B",
+        "text": "Lay up"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q8_618_998540",
+    "question_type": "Q8",
+    "question": "Watch a 3-minute segment of the game. Which shot type will Utah Jazz use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lay up"
+      },
+      {
+        "letter": "B",
+        "text": "Jumper"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q9_270_970933",
+    "question_type": "Q9",
+    "question": "Analyze the 3-minute segment of the game. Observe the player who grabs a rebound between time 1:38 and 1:48. Which play type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Screen off"
+      },
+      {
+        "letter": "B",
+        "text": "Pick'n'Roll"
+      },
+      {
+        "letter": "C",
+        "text": "Pick-n-roll without a ball"
+      },
+      {
+        "letter": "D",
+        "text": "Catch and shoot"
+      },
+      {
+        "letter": "E",
+        "text": "Hand offs"
+      }
+    ],
+    "correct_answer": "D"
+  },
+  {
+    "id": "Q9_44_991856",
+    "question_type": "Q9",
+    "question": "Analyze the 12-minute segment of the game. Observe the player who commits a turnover between time 0:18 and 0:28. Which play type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Isolation"
+      },
+      {
+        "letter": "B",
+        "text": "Pick-n-roll without a ball"
+      },
+      {
+        "letter": "C",
+        "text": "Pick'n'Roll"
+      },
+      {
+        "letter": "D",
+        "text": "Pick'n'pop"
+      },
+      {
+        "letter": "E",
+        "text": "Cut"
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": "Q9_470_619326",
+    "question_type": "Q9",
+    "question": "Analyze the 15-minute segment of the game. Observe the player who misses a three-point attempt between time 4:47 and 4:57. Which play type will this specific player use the most for the remainder of the game?",
     "options": [
       {
         "letter": "A",
@@ -374,7 +1170,63 @@ const QUESTIONS = [
       },
       {
         "letter": "C",
+        "text": "Pick-n-roll without a ball"
+      },
+      {
+        "letter": "D",
+        "text": "Catch and shoot"
+      },
+      {
+        "letter": "E",
+        "text": "Post"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q9_549_616710",
+    "question_type": "Q9",
+    "question": "Analyze the 3-minute segment of the game. Observe the player who grabs a rebound between time 1:01 and 1:11. Which play type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pick-n-roll without a ball"
+      },
+      {
+        "letter": "B",
+        "text": "Post"
+      },
+      {
+        "letter": "C",
+        "text": "Catch and Drive"
+      },
+      {
+        "letter": "D",
+        "text": "Hand offs"
+      },
+      {
+        "letter": "E",
+        "text": "Screen off"
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": "Q9_127_820888",
+    "question_type": "Q9",
+    "question": "Analyze the 5-minute segment of the game. Observe the player who makes a free throw between time 1:25 and 1:35. Which play type will this specific player use the most for the remainder of the game?",
+    "options": [
+      {
+        "letter": "A",
         "text": "Isolation"
+      },
+      {
+        "letter": "B",
+        "text": "Hand offs"
+      },
+      {
+        "letter": "C",
+        "text": "Pick-n-roll without a ball"
       },
       {
         "letter": "D",
@@ -382,867 +1234,7 @@ const QUESTIONS = [
       },
       {
         "letter": "E",
-        "text": "Hand offs"
-      }
-    ],
-    "correct_answer": "C"
-  },
-  {
-    "id": 134070434,
-    "question_type": "Q3_shooting_hand",
-    "question": "What is the shooting hand of the player in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Right"
-      },
-      {
-        "letter": "B",
-        "text": "Left"
-      },
-      {
-        "letter": "C",
-        "text": "Both"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 223083214,
-    "question_type": "Q3_shooting_hand",
-    "question": "What is the shooting hand of the player in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Right"
-      },
-      {
-        "letter": "B",
-        "text": "Left"
-      },
-      {
-        "letter": "C",
-        "text": "Both"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 263903552,
-    "question_type": "Q3_shooting_hand",
-    "question": "What is the shooting hand of the player in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Both"
-      },
-      {
-        "letter": "B",
-        "text": "Right"
-      },
-      {
-        "letter": "C",
-        "text": "Left"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 267729301,
-    "question_type": "Q3_shot_type",
-    "question": "What is the shot type shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Dunk"
-      },
-      {
-        "letter": "B",
-        "text": "Reverse"
-      },
-      {
-        "letter": "C",
-        "text": "Alley oop"
-      },
-      {
-        "letter": "D",
-        "text": "Lay up"
-      },
-      {
-        "letter": "E",
-        "text": "Jumper"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 266581026,
-    "question_type": "Q3_shot_type",
-    "question": "What is the shot type shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Hook"
-      },
-      {
-        "letter": "B",
-        "text": "Dunk"
-      },
-      {
-        "letter": "C",
-        "text": "Reverse"
-      },
-      {
-        "letter": "D",
-        "text": "Lay up"
-      },
-      {
-        "letter": "E",
-        "text": "Jumper"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 140566184,
-    "question_type": "Q3_shot_type",
-    "question": "What is the shot type shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Reverse"
-      },
-      {
-        "letter": "B",
-        "text": "Jumper"
-      },
-      {
-        "letter": "C",
-        "text": "Alley oop"
-      },
-      {
-        "letter": "D",
-        "text": "Hook"
-      },
-      {
-        "letter": "E",
-        "text": "Dunk"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 267424100,
-    "question_type": "Q4_spatial_position_non_descriptive",
-    "question": "Based on the Shot Missed displayed in the video clip, select the correct option describing the area on the court where the shot occurred and provide only the corresponding letter as the answer:",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Point"
-      },
-      {
-        "letter": "B",
-        "text": "Short Corner"
-      },
-      {
-        "letter": "C",
-        "text": "Top"
-      },
-      {
-        "letter": "D",
-        "text": "Corner"
-      },
-      {
-        "letter": "E",
-        "text": "Restricted Area"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 125598837,
-    "question_type": "Q4_spatial_position_non_descriptive",
-    "question": "Watch the Shot Made in the video clip and determine the correct court area where the shot happened. Select the right option and respond with just the corresponding letter.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Short Corner"
-      },
-      {
-        "letter": "B",
-        "text": "Wing"
-      },
-      {
-        "letter": "C",
-        "text": "Restricted Area"
-      },
-      {
-        "letter": "D",
-        "text": "Low Post"
-      },
-      {
-        "letter": "E",
-        "text": "Corner"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 245941070,
-    "question_type": "Q5_player_name_same_team_update",
-    "question": "Watch the Free Throw Made in the clip and determine the player's name. Select the right option and respond with just the corresponding letter.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Demir Dogan"
-      },
-      {
-        "letter": "B",
-        "text": "Zoran Vuceljic"
-      },
-      {
-        "letter": "C",
-        "text": "Tomislav Ivisic"
-      },
-      {
-        "letter": "D",
-        "text": "Vasilije Bacovic"
-      },
-      {
-        "letter": "E",
-        "text": "Zvonimir Ivisic"
-      }
-    ],
-    "correct_answer": "C"
-  },
-  {
-    "id": 140017079,
-    "question_type": "Q5_player_name_same_team_update",
-    "question": "Observe the Foul in the clip and identify the player's name. Choose the correct option and respond with the corresponding letter only.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sasha Mattias Grant"
-      },
-      {
-        "letter": "B",
-        "text": "T.J. Bray"
-      },
-      {
-        "letter": "C",
-        "text": "Vladimir Lucic"
-      },
-      {
-        "letter": "D",
-        "text": "Greg Monroe"
-      },
-      {
-        "letter": "E",
-        "text": "DeMarcus Nelson"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 161386374,
-    "question_type": "Q5_player_name_same_team_update",
-    "question": "Analyze the 2 Pt Missed shown in the clip and select the correct player's name. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kris Bankston"
-      },
-      {
-        "letter": "B",
-        "text": "Jovan Stulic"
-      },
-      {
-        "letter": "C",
-        "text": "Marko Andric"
-      },
-      {
-        "letter": "D",
-        "text": "Yacine Toumi"
-      },
-      {
-        "letter": "E",
-        "text": "Nikola Maric"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 266775945,
-    "question_type": "Q5_player_number_two_team_similar_update",
-    "question": "Observe the 2 Pt Made in the video and determine the player's jersey number and team name. Choose the correct option and respond with the corresponding letter only.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "13, Oral Roberts"
-      },
-      {
-        "letter": "B",
-        "text": "2, Western Illinois"
-      },
-      {
-        "letter": "C",
-        "text": "23, Western Illinois"
-      },
-      {
-        "letter": "D",
-        "text": "3, Oral Roberts"
-      },
-      {
-        "letter": "E",
-        "text": "32, Western Illinois"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 249751729,
-    "question_type": "Q5_player_number_two_team_similar_update",
-    "question": "Review the 2 Pt Made displayed in the clip and pick the correct option identifying the player's jersey number and team name. Reply using only the corresponding letter.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "13, Air Force"
-      },
-      {
-        "letter": "B",
-        "text": "10, Air Force"
-      },
-      {
-        "letter": "C",
-        "text": "11, Air Force"
-      },
-      {
-        "letter": "D",
-        "text": "33, Air Force"
-      },
-      {
-        "letter": "E",
-        "text": "40, Air Force"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 217697817,
-    "question_type": "Q5_player_number_two_team_similar_update",
-    "question": "Analyze the 2 Pt Missed shown in the clip and select the correct jersey number and team name. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "13, S.L. Benfica"
-      },
-      {
-        "letter": "B",
-        "text": "1, S.L. Benfica"
-      },
-      {
-        "letter": "C",
-        "text": "9, S.L. Benfica"
-      },
-      {
-        "letter": "D",
-        "text": "11, Sporting CP"
-      },
-      {
-        "letter": "E",
-        "text": "20, Sporting CP"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 169964408,
-    "question_type": "Q5_player_position",
-    "question": "Analyze the Post displayed in the clip and select the correct option indicating the player's position. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Center"
-      },
-      {
-        "letter": "B",
-        "text": "Forward"
-      },
-      {
-        "letter": "C",
-        "text": "Guard"
-      }
-    ],
-    "correct_answer": "C"
-  },
-  {
-    "id": 161562533,
-    "question_type": "Q5_player_position",
-    "question": "Analyze the Free Throw Made displayed in the clip and select the correct option indicating the player's position. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Center"
-      },
-      {
-        "letter": "B",
-        "text": "Guard"
-      },
-      {
-        "letter": "C",
-        "text": "Forward"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 141983484,
-    "question_type": "Q5_player_position",
-    "question": "Watch the Assisting in the clip and identify the player's position. Select the right option and respond with just the corresponding letter.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Center"
-      },
-      {
-        "letter": "B",
-        "text": "Forward"
-      },
-      {
-        "letter": "C",
-        "text": "Guard"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 133995834,
-    "question_type": "Q5_player_skill_level",
-    "question": "Analyze the 2 Pt Shot displayed in the clip and determine the player's 2 Pt Shooting skill level. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Excellent"
-      },
-      {
-        "letter": "B",
-        "text": "Average"
-      },
-      {
-        "letter": "C",
-        "text": "Poor"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 251953754,
-    "question_type": "Q5_player_skill_level",
-    "question": "Analyze the 3 Pt Shot displayed in the clip and determine the player's 3 Pt Shooting skill level. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Poor"
-      },
-      {
-        "letter": "B",
-        "text": "Excellent"
-      },
-      {
-        "letter": "C",
-        "text": "Average"
-      }
-    ],
-    "correct_answer": "C"
-  },
-  {
-    "id": 161781697,
-    "question_type": "Q5_player_skill_level",
-    "question": "Observe the 3 Pt Shot in the clip and assess the player's 3 Pt Shooting skill level. Choose the correct option and respond with the corresponding letter only.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Poor"
-      },
-      {
-        "letter": "B",
-        "text": "Average"
-      },
-      {
-        "letter": "C",
-        "text": "Excellent"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 163397745,
-    "question_type": "Q6_current_score_similar",
-    "question": "What is the current score shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "46 - 40"
-      },
-      {
-        "letter": "B",
-        "text": "55 - 46"
-      },
-      {
-        "letter": "C",
-        "text": "50 - 43"
-      },
-      {
-        "letter": "D",
-        "text": "42 - 35"
-      },
-      {
-        "letter": "E",
-        "text": "43 - 39"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 124911734,
-    "question_type": "Q6_current_score_similar",
-    "question": "What is the current score shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "56 - 27"
-      },
-      {
-        "letter": "B",
-        "text": "47 - 26"
-      },
-      {
-        "letter": "C",
-        "text": "50 - 27"
-      },
-      {
-        "letter": "D",
-        "text": "52 - 31"
-      },
-      {
-        "letter": "E",
-        "text": "56 - 33"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 275238212,
-    "question_type": "Q6_current_score_similar",
-    "question": "What is the current score shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "58 - 73"
-      },
-      {
-        "letter": "B",
-        "text": "69 - 75"
-      },
-      {
-        "letter": "C",
-        "text": "59 - 73"
-      },
-      {
-        "letter": "D",
-        "text": "68 - 83"
-      },
-      {
-        "letter": "E",
-        "text": "61 - 77"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 155031921,
-    "question_type": "Q6_remaining_time",
-    "question": "When 2 Pt Made occurred in the clip, select the correct option that describes closest to the remaining quarter time. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "3:47"
-      },
-      {
-        "letter": "B",
-        "text": "7:14"
-      },
-      {
-        "letter": "C",
-        "text": "5:33"
-      },
-      {
-        "letter": "D",
-        "text": "2:34"
-      },
-      {
-        "letter": "E",
-        "text": "1:31"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 267424101,
-    "question_type": "Q6_remaining_time",
-    "question": "When 3 Pt Missed occurred in the clip, choose the correct option that best estimates the remaining quarter time. Respond with the corresponding letter only.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "9:27"
-      },
-      {
-        "letter": "B",
-        "text": "6:05"
-      },
-      {
-        "letter": "C",
-        "text": "2:15"
-      },
-      {
-        "letter": "D",
-        "text": "3:51"
-      },
-      {
-        "letter": "E",
-        "text": "8:29"
-      }
-    ],
-    "correct_answer": "C"
-  },
-  {
-    "id": 154381146,
-    "question_type": "Q6_remaining_time",
-    "question": "Analyze the moment when 2 Pt Made happened in the clip and select the option that most accurately describes the remaining quarter time. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "0:15"
-      },
-      {
-        "letter": "B",
-        "text": "1:28"
-      },
-      {
-        "letter": "C",
-        "text": "9:16"
-      },
-      {
-        "letter": "D",
-        "text": "5:27"
-      },
-      {
-        "letter": "E",
-        "text": "2:51"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 191657286,
-    "question_type": "Q6_shot_clock",
-    "question": "When 2 Pt Missed occurred in the clip, select the correct option that describes closest to the remaining shot clock. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "12"
-      },
-      {
-        "letter": "B",
-        "text": "24"
-      },
-      {
-        "letter": "C",
-        "text": "0"
-      },
-      {
-        "letter": "D",
-        "text": "18"
-      },
-      {
-        "letter": "E",
-        "text": "6"
-      }
-    ],
-    "correct_answer": "E"
-  },
-  {
-    "id": 183494408,
-    "question_type": "Q6_shot_clock",
-    "question": "When 2 Pt Made occurred in the clip, select the correct option that describes closest to the remaining shot clock. Provide only the corresponding letter as your answer.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "0"
-      },
-      {
-        "letter": "B",
-        "text": "6"
-      },
-      {
-        "letter": "C",
-        "text": "18"
-      },
-      {
-        "letter": "D",
-        "text": "24"
-      },
-      {
-        "letter": "E",
-        "text": "12"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 152881452,
-    "question_type": "Q6_shot_clock",
-    "question": "Review the clip and determine the closest estimate of the remaining shot clock when 3 Pt Made took place. Reply using only the corresponding letter.",
-    "options": [
-      {
-        "letter": "A",
-        "text": "24"
-      },
-      {
-        "letter": "B",
-        "text": "12"
-      },
-      {
-        "letter": "C",
-        "text": "0"
-      },
-      {
-        "letter": "D",
-        "text": "6"
-      },
-      {
-        "letter": "E",
-        "text": "18"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 206301050,
-    "question_type": "Q6_which_quarter",
-    "question": "What is the current quarter shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "1"
-      },
-      {
-        "letter": "B",
-        "text": "2"
-      }
-    ],
-    "correct_answer": "A"
-  },
-  {
-    "id": 184636122,
-    "question_type": "Q6_which_quarter",
-    "question": "What is the current quarter shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "1"
-      },
-      {
-        "letter": "B",
-        "text": "3"
-      },
-      {
-        "letter": "C",
-        "text": "2"
-      },
-      {
-        "letter": "D",
-        "text": "4"
-      }
-    ],
-    "correct_answer": "B"
-  },
-  {
-    "id": 264370616,
-    "question_type": "Q6_which_quarter",
-    "question": "What is the current quarter shown in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "1"
-      },
-      {
-        "letter": "B",
-        "text": "3"
-      },
-      {
-        "letter": "C",
-        "text": "2"
-      },
-      {
-        "letter": "D",
-        "text": "4"
-      }
-    ],
-    "correct_answer": "C"
-  },
-  {
-    "id": 142337031,
-    "question_type": "Q6_which_teams",
-    "question": "What are the two teams playing in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Los Angeles Lakers and Brooklyn Nets"
-      },
-      {
-        "letter": "B",
-        "text": "Chicago Bulls and Washington Wizards"
-      },
-      {
-        "letter": "C",
-        "text": "Denver Nuggets and Boston Celtics"
-      },
-      {
-        "letter": "D",
-        "text": "Washington Wizards and Minnesota Timberwolves"
-      },
-      {
-        "letter": "E",
-        "text": "New York Knicks and Los Angeles Lakers"
-      }
-    ],
-    "correct_answer": "D"
-  },
-  {
-    "id": 142548571,
-    "question_type": "Q6_which_teams",
-    "question": "What are the two teams playing in the video clip?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Oklahoma State and Yale"
-      },
-      {
-        "letter": "B",
-        "text": "Sonoma State and Morehead State"
-      },
-      {
-        "letter": "C",
-        "text": "Thomas (GA) and LeTourneau"
-      },
-      {
-        "letter": "D",
-        "text": "Milligan and Carson-Newman"
-      },
-      {
-        "letter": "E",
-        "text": "Truman State and Christian Brothers"
+        "text": "Pick'n'pop"
       }
     ],
     "correct_answer": "A"

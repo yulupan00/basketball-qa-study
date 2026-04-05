@@ -7,7 +7,7 @@
     // ============================================================
     // CONFIGURATION
     // ============================================================
-    const FORMSPREE_URL = "https://formspree.io/f/xkopzyyb";
+    const FORMSPREE_URL = "https://formspree.io/f/xjgppavp";
 
     // Sport detection from URL or global
     const sport = window.CURRENT_SPORT || "basketball";
@@ -48,54 +48,18 @@
     const progressText = document.getElementById("progressText");
     const progressBar = document.getElementById("progressBar");
 
-    // Pretty names for question types (basketball + hockey)
+    // Pretty names for question types (forecasting)
     const TYPE_DISPLAY_NAMES = {
-        // Basketball
-        "Q1_atomic_action_recognition": "Atomic Action Recognition",
-        "Q2_action_sequence": "Action Sequence",
-        "Q3_contested_shot": "Contested Shot",
-        "Q3_dribble_move": "Dribble Move",
-        "Q3_drive_direction": "Drive Direction",
-        "Q3_play_type": "Play Type",
-        "Q3_shooting_hand": "Shooting Hand",
-        "Q3_shot_type": "Shot Type",
-        "Q4_spatial_position_non_descriptive": "Spatial Position",
-        "Q5_player_name_same_team_update": "Player Name",
-        "Q5_player_number_two_team_similar_update": "Player Number & Team",
-        "Q5_player_position": "Player Position",
-        "Q5_player_skill_level": "Player Skill Level",
-        "Q6_current_score_similar": "Current Score",
-        "Q6_remaining_time": "Remaining Time",
-        "Q6_shot_clock": "Shot Clock",
-        "Q6_which_quarter": "Which Quarter",
-        "Q6_which_teams": "Which Teams",
-        // Hockey
-        "Q1_hockey_atomic_action_recognition": "Atomic Action Recognition",
-        "Q2_hockey_action_sequence": "Action Sequence",
-        "Q3_hockey_goalie_stance": "Goalie Stance",
-        "Q3_hockey_penalty_violation": "Penalty Violation",
-        "Q3_hockey_shot_type": "Shot Type",
-        "Q4_hockey_zone_understanding": "Zone Understanding",
-        "Q5_hockey_player_jersey_number": "Player Jersey Number",
-        "Q5_hockey_player_name_10000x40": "Player Name",
-        "Q6_which_period": "Which Period",
-        "Q6_which_teams": "Which Teams",
-        // Soccer
-        "Q1_primary_action_recognition": "Primary Action Recognition",
-        "Q1_secondary_action_recognition": "Secondary Action Recognition",
-        "Q2_action_sequence": "Action Sequence",
-        "Q3_attack_flank": "Attack Flank",
-        "Q3_pass_accurate": "Pass Accuracy",
-        "Q3_pass_height": "Pass Height",
-        "Q3_shot_body_part": "Shot Body Part",
-        "Q3_shot_expected_goal": "Shot Expected Goal",
-        "Q3_shot_goal": "Shot Goal",
-        "Q4_shot_spatial": "Shot Spatial",
-        "Q5_player_name": "Player Name",
-        "Q5_player_position": "Player Position",
-        "Q6_current_time": "Current Time",
-        "Q6_which_half": "Which Half",
-        "Q6_which_team": "Which Team",
+        "Q1": "Category Q1",
+        "Q2": "Category Q2",
+        "Q3": "Category Q3",
+        "Q4": "Category Q4",
+        "Q5": "Category Q5",
+        "Q6": "Category Q6",
+        "Q7": "Category Q7",
+        "Q8": "Category Q8",
+        "Q9": "Category Q9",
+        "Q10": "Category Q10",
     };
 
     // ============================================================
@@ -165,15 +129,20 @@
     // ============================================================
     function getVideoUrl(questionId) {
         const qId = String(questionId);
+        let path = null;
         if (typeof VIDEO_MAPPING !== "undefined" && VIDEO_MAPPING[qId]) {
-            return VIDEO_MAPPING[qId];
+            path = VIDEO_MAPPING[qId];
+        } else {
+            // Fallback: try to find in question data
+            const q = QUESTIONS.find((qq) => String(qq.id) === qId);
+            if (q && q.video_url) {
+                path = q.video_url;
+            }
         }
-        // Fallback: try to find in question data
-        const q = QUESTIONS.find((qq) => String(qq.id) === qId);
-        if (q && q.video_url) {
-            return q.video_url;
-        }
-        return null;
+        if (!path) return null;
+        // Prepend base URL if configured (for R2/CDN hosting)
+        const base = (typeof VIDEO_BASE_URL !== "undefined" && VIDEO_BASE_URL) ? VIDEO_BASE_URL : "";
+        return base ? base.replace(/\/+$/, "") + "/" + path : path;
     }
 
     function loadVideo(questionId) {

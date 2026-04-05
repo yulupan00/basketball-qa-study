@@ -9,8 +9,6 @@ import json, os
 
 configs = [
     ("data/basketball_questions_3.json", "data/questions.js"),
-    ("data/hockey_questions_3.json", "data/hockey_questions.js"),
-    ("data/soccer_questions_5.json", "data/soccer_questions.js"),
 ]
 
 for src, dst in configs:
